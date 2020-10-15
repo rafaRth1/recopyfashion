@@ -1,0 +1,286 @@
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*= Reset para REMS this = 10px de 16px=*/
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  body{
+    font-size: 1.6rem;
+    line-height: 2;
+  }
+
+/*============== GLOBALES ================*/
+.contenedor {
+    max-width: 900px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 3.8rem;
+}
+
+h2{
+    font-size: 3.4rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+h4{
+    font-size: 4.5rem;
+    font-style: italic;
+    
+}
+
+/*============== UTILIDADES ================*/
+
+.centrar-texto {
+    text-align: center;
+}
+.no-margin {
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+/*============== HEADER================*/
+
+.listado li {
+    list-style: none;
+    display: inline-block;
+    width: 12rem;
+    border-right: 0.1rem solid #b5c8dc;
+    font-size: 1.7rem;
+    font-style: italic;
+    cursor: pointer;
+    
+}
+
+.listado li a {
+    text-decoration: none;
+    color: #b5c8dc;
+}
+
+.listado li a:hover{
+    color: #000000;
+}
+
+.listado li:last-of-type{
+    border-right: 0 ;
+}
+
+/**/
+
+#title-one{
+    text-transform: uppercase;
+    font-size: 6rem;
+    
+}
+
+/*============== PRINCIPAL================*/
+
+
+.site-main{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-gap: 2rem;
+    position: relative;
+    
+}
+
+.img-cssgrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+.imagen-1{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+.imagen-2{
+
+    grid-column: 2 / 4; 
+}
+
+
+.imagen-3{
+    grid-row: 2 / 4;
+    grid-column: 3 /4 ;
+}
+
+.imagen-4{
+    grid-column: 1 / 3;
+}
+
+.recuadro{
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 3rem;
+    overflow: hidden;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.recuadro p span{
+    font-style: italic;
+}
+
+.ver{
+    width: 80%;
+    border: 0;
+    background: #d4133a;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+
+.imagen-5{
+    margin-top: 8rem;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+.select-one{
+    font-size: 4.5rem;
+    line-height: 1;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+#select-two{
+    font-style: italic;
+    line-height: 1;
+    color: #7a7979;
+    margin-bottom: 10rem;
+}
+
+#mini-footer{
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 4rem;
+}
+
+.select-4   {
+    border-top: 1px solid #000000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.button{
+    border: 0;
+    background: #000000;
+    color: #ffffff;
+    width: 100%;
+    height: 3rem;
+
+}
+
+
+
+/*============== SECTION ONE================*/
+
+.complement-one{
+   display: grid;
+   grid-template-columns: 45% 60%;
+   grid-gap: 2rem;
+   align-items: center;
+   text-align: left;
+   font-style: italic;
+   padding: 0 10rem;
+   line-height: 1;
+}
+
+/*============== SECTION TWO================*/
+
+.select-5{
+    font-size: 3.5rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.complement-two{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.static-2 {
+    background: #000000; 
+    color: #ffffff;
+    line-height: 1rem;
+    padding: 1rem;
+
+    
+}
+
+.promocion{
+    margin-top: 5rem;
+    text-align: left;
+    
+}
+
+#text{
+    font-size: 3rem;
+    font-style: italic;
+}
+
+#text1{
+    text-transform: uppercase;
+    font-size: 4rem;
+    
+}
+
+#text2{
+    font-size: 3rem;
+}
+
+.ofertas{
+    border: 0;
+    height: 4rem;
+    width: 95%;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    background: #d4133a;
+    color: #ffffff;
+    cursor: pointer;
+}
+/*============== SECTION THREE ================*/
+
+
+
+/*============== FOOTER ================*/
+
+.foot{
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.foot p {
+    font-style: italic;
+    font-size: 1.8rem;
+}
+
+#foot-mine i{
+    margin-right: 2rem;
+    font-size: 2rem;
+    
+}
+
